@@ -23,8 +23,8 @@ if(process.env.NODE_ENV === "development"){
 
 
 // routes
-router.get("/", (req,res)=>{
-    return res.send("owner route")
+router.get("/admin", (req,res)=>{
+    res.render("createproducts")
 })
 
 export default router
