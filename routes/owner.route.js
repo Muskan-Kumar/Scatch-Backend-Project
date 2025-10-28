@@ -24,7 +24,8 @@ if(process.env.NODE_ENV === "development"){
 
 // routes
 router.get("/admin", (req,res)=>{
-    res.render("createproducts")
+    const success = req.flash("success")
+    res.render("createproducts", { success })
 })
 
 export default router

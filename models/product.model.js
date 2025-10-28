@@ -1,8 +1,8 @@
 import mongoose from "mongoose"
 
 const productSchema = mongoose.Schema({
-    picture: {
-        type:String,
+    image: {
+        type:Buffer,
         require: true
     },
     name: {
@@ -18,7 +18,7 @@ const productSchema = mongoose.Schema({
         default: 0,
     },
     bgcolor: {
-        type: Number
+        type: String
     },
     panelcolor: {
         type: String
